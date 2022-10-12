@@ -17,3 +17,15 @@ header {
     font-family: poppins-regular;
     src: url(./poppins/Poppins-Regular.ttf);
 }
+#bernardTitle {
+    color: black;
+}
+#breakfastTitle {
+    color: #e30b2b;
+}
+#andSymbolTitle {
+    color: green;
+}
+#burgerTitle {
+    color: rgb(140, 74, 27);
+}
