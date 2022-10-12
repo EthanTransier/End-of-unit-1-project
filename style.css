@@ -1,7 +1,19 @@
 h1 {
     color: black;
+    font-family: poppins-regular;
+    text-align: center;
+    font-size: 40px;
 }
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 header {
-    background-color: beige;
+    background-color: rgb(237, 213, 135);
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(./poppins/Poppins-Regular.ttf);
 }
