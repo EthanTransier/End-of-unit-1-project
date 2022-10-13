@@ -1,21 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 h1 {
     color: black;
     font-family: poppins-regular;
     text-align: center;
     font-size: 40px;
 }
-* {
-    margin: 0px;
-    padding: 0px;
-}
 header {
     background-color: rgb(237, 213, 135);
     padding-top: 25px;
     padding-bottom: 15px;
 }
-@font-face {
-    font-family: poppins-regular;
-    src: url(./poppins/Poppins-Regular.ttf);
+.mainContentContainer {
+    display: flex;
+    justify-content: center;
+}
+.breakfastSpecialsContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    width: 600px;
+    text-align: center;
+    border:2px black dotted;
+}
+.burgerSpecialsContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    border: 2px black dotted;
 }
 #bernardTitle {
     color: black;
@@ -28,4 +44,10 @@ header {
 }
 #burgerTitle {
     color: rgb(140, 74, 27);
+}
+
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(./poppins/Poppins-Regular.ttf);
 }
