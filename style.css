@@ -2,54 +2,66 @@
     margin: 0px;
     padding: 0px;
 }
-h1 {
-    color: black;
-    font-family: poppins-regular;
-    text-align: center;
-    font-size: 40px;
-}
-header {
-    background-color: rgb(237, 213, 135);
-    padding-top: 25px;
-    padding-bottom: 15px;
-}
-.mainContentContainer {
-    display: flex;
-    justify-content: center;
-}
-.breakfastSpecialsContainer {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10px;
-    padding: 10px;
-    width: 600px;
-    text-align: center;
-    border:2px black dotted;
-}
-.burgerSpecialsContainer {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10px;
-    width: 600px;
-    padding: 10px;
-    text-align: center;
-    border: 2px black dotted;
-}
-#bernardTitle {
-    color: black;
-}
-#breakfastTitle {
-    color: #e30b2b;
-}
-#andSymbolTitle {
-    color: green;
-}
-#burgerTitle {
-    color: rgb(140, 74, 27);
-}
-
 
 @font-face {
     font-family: poppins-regular;
     src: url(./poppins/Poppins-Regular.ttf);
+}
+
+/* header */
+header {
+    display: flex;
+    padding: 15px;
+
+    width: 100%;
+    background-color: rgb(84, 55, 36);
+    position: fixed;
+    gap: 60px;
+
+    font-family: poppins-regular;
+    font-size: 30px;
+    vertical-align: top;
+    color: white;
+}
+
+header img {
+    float: left;
+}
+
+header a {
+    font-family: poppins-regular;
+    font-size: 30px;
+    vertical-align: top;
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited {
+    font-family: poppins-regular;
+    font-size: 30px;
+    vertical-align: top;
+    color: white;
+    text-decoration: none;
+}
+
+.emptyGap {
+    background-color: white;
+    color: white;
+    font-size: 15px;
+}
+
+.headerHomeButton {
+    position: relative;
+    top: 20px;
+}
+
+/* Under the Header Home Page */
+.mainFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* OTHER */
+body{
+    background-color: bisque;
 }
