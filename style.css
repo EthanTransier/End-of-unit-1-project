@@ -60,7 +60,15 @@ header a:visited {
     display: flex;
     justify-content: space-evenly;
 }
+.searchBarContainer {
+margin-top: 10px;
 
+}
+#searchInput {
+    width: 130px;
+    height: 20px;
+
+}
 /* OTHER */
 body{
     background-color: bisque;
