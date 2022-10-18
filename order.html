@@ -61,7 +61,26 @@
     </header><br><br><br><br><br>
     <fieldset class="standardFieldset">
         <h1>Order Now!</h1>
-        <input type="radio" name="deliver" id="delivery"><label for="deliver">Delivery</label>
+        <div class="standardFlexBox">
+            <div class="orderDiv">
+                <h2>Delivery Type</h2><br>
+                <input type="radio" name="deliver" id="delivery"><label for="deliver">Delivery</label><br>
+                <input type="radio" name="deliver" id="pickup"><label for="pickup">Pick-Up</label><br>
+                <input type="radio" name="deliver" id="dinein"><label for="dinein">Dine-In</label>
+            </div>
+            <div class="orderDiv">
+                <h2>Tip Amount</h2><br>
+                <input type="radio" name="tip" id="tip0"><label for="tip0">No tip</label><br>
+                <input type="radio" name="tip" id="tip10"><label for="tip10">10% tip</label><br>
+                <input type="radio" name="tip" id="tip20"><label for="tip20">20% tip</label>
+            </div>
+            <div class="orderDiv">
+                <h2>Order information</h2><br>
+                <label for="name">Name: </label><input type="text" name="name" id="name"><br>
+                <label for="email">Email: </label><input type="text" name="email" id="email"><br>
+                <label for="date">Date: </label><input type="date" name="date" id="date">
+            </div>
+        </div>
     </fieldset><br>
     <footer>
         <p><br>
