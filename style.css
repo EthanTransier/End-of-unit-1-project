@@ -70,6 +70,22 @@ margin-top: 10px;
     height: 20px;
 
 }
+.mainContentContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    text-align: center;
+}
+.burgerSpecialsContainer {
+    margin-left: 100px;
+    width: 500px;
+    background-color: rgb(255, 199, 131);
+}
+.breakfastSpecialsContainer {
+    margin-right: 100px;
+    width: 500px;
+    background-color: rgb(255, 199, 131);
+}
 /* Footer */
 footer {
     background-color: rgb(84, 55, 36);
@@ -80,4 +96,7 @@ footer {
 /* OTHER */
 body{
     background-color: bisque;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
