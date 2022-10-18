@@ -72,3 +72,22 @@ footer {
 body{
     background-color: bisque;
 }
+
+.standardFieldset {
+    margin: 30px;
+    background-color: burlywood;
+    border: 3px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+label {
+    font-size: 20px;
+}
+
+.delivery {
+    width: 20px;
+}
