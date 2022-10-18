@@ -51,7 +51,7 @@ header a:visited {
     font-size: 15px;
 }
 
-.headerHomeButton {
+.headerHomeButton, .headerMenuButton, .headerOrderButton, .headerJobButton {
     position: relative;
     top: 20px;
 }
