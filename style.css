@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: poppins-regular;
 }
 
 @font-face {
@@ -14,11 +15,11 @@ header {
     padding: 15px;
 
     width: 100%;
+    height: auto;
     background-color: rgb(84, 55, 36);
     position: fixed;
     gap: 60px;
 
-    font-family: poppins-regular;
     font-size: 30px;
     vertical-align: top;
     color: white;
@@ -69,6 +70,13 @@ margin-top: 10px;
     height: 20px;
 
 }
+/* Footer */
+footer {
+    background-color: rgb(84, 55, 36);
+    text-align: center;
+    color: white;
+}
+
 /* OTHER */
 body{
     background-color: bisque;
