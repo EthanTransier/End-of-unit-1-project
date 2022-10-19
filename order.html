@@ -16,11 +16,13 @@
         content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodserviceequipmentjournal.com%2Ffirst-scottish-kitchen-project-for-burger-chain-byron%2F&psig=AOvVaw1db1o1HupUspTpilvMnfGa&ust=1665882808170000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCND2q5uH4foCFQAAAAAdAAAAABAD">
     <meta property="og:description" content="The great website of 2022 that asks for all of your user information.">
 
+    
     <link rel="stylesheet" href="./style.css">
     <title>Bernard's Breakfast Burgers</title>
 </head>
 
 <body>
+    <script src="./order.js"></script>
     <!-- Header -->
     <header>
         <div class="headerCornerLogo">
@@ -79,15 +81,39 @@
             </div>
             <!-- Main Orders -->
             <div class="standardFlexBox">
-                <div class="orderDiv">
-                    <h2>Order Breakfast</h2><hr>
+                <div class="orderDiv" style="width: 40%;">
+                    <h2>Order Breakfast</h2><hr><br>
                     <input type="number" name="tripplePancake" id="tripplePancake" class="basicNumber" placeholder="0"> <label
                     for="bernardBaconSpecial">Tripple Pancake Stack $9.99</label><br>
                     <input type="number" name="frenchToast" id="frenchToast" class="basicNumber" placeholder="0"> <label
                     for="frenchToast">French Toast Delight $10.99</label><br>
+                    <input type="number" name="waffleCombo" id="waffleCombo" class="basicNumber" placeholder="0"> <label
+                    for="waffleCombo">Belgian Waffle Combo $10.99</label><br>
+                    <input type="number" name="classicBurrito" id="classicBurrito" class="basicNumber" placeholder="0"> <label
+                    for="classicBurrito">Classic Breakfast Burrito $11.99</label><br>
+                    <input type="number" name="buildingOmelet" id="buildingOmelet" class="basicNumber" placeholder="0"> <label
+                    for="buildingOmelet">Build Your Own Omelet $11.99</label><br>
+                    <input type="number" name="buildingBreakfast" id="buildingBreakfast" class="basicNumber" placeholder="0"> <label
+                    for="buildingBreakfast">Build Your Own Breakfast $15.99</label><br><br><hr style="border-top:dotted 4px"><br>
+                    <input type="number" name="breakfastSide" id="breakfastSide" class="basicNumber" placeholder="0"> <label
+                    for="breakfastSide">Extra Breakfast Side $2.99</label><br>
                 </div>
-                <div class="orderDiv">
-                    <h2>Order Burgers</h2><hr>
+                <div class="orderDiv" style="width: 40%;">
+                    <h2>Order Burgers</h2><hr><br>
+                    <input type="number" name="oldBurger" id="oldBurger" class="basicNumber" placeholder="0"> <label
+                    for="oldBurger">Old Style Burger $10.99</label><br>
+                    <input type="number" name="cheeseBurger" id="cheeseBurger" class="basicNumber" placeholder="0"> <label
+                    for="cheeseBurger">OG Cheese Burger $11.99</label><br>
+                    <input type="number" name="baconBurger" id="baconBurger" class="basicNumber" placeholder="0"> <label
+                    for="baconBurger">The Bacon Burger $12.99</label><br>
+                    <input type="number" name="doubleCheese" id="doubleCheese" class="basicNumber" placeholder="0"> <label
+                    for="doubleCheese">The Double Decker Cheese Burger $13.99</label><br>
+                    <input type="number" name="doubleBacon" id="doubleBacon" class="basicNumber" placeholder="0"> <label
+                    for="doubleBacon">The Double Decker Bacon Burger $13.99</label><br>
+                    <input type="number" name="buildBurger" id="buildBurger" class="basicNumber" placeholder="0"> <label
+                    for="buildBurger">Build Your Own Burger $11.99</label><br><br><hr style="border-top:dotted 4px"><br>
+                    <input type="number" name="burgerSide" id="burgerSide" class="basicNumber" placeholder="0"> <label
+                    for="burgerSide">Extra Burger Side $2.99</label><br>
                 </div>
             </div>
             <hr>
@@ -106,11 +132,16 @@
                     <input type="radio" name="tip" id="tip10"><label for="tip10">15% tip</label><br>
                     <input type="radio" name="tip" id="tip20"><label for="tip20">30% tip</label>
                 </div>
-                <div class="orderDiv" style="width: 40%;">
+                <div class="orderDiv" style="width: 20%;">
                     <h2>Order information</h2><br>
                     <label for="name">Name: </label><input type="text" name="name" id="name" class="orderTextInput"><br>
                     <label for="email">Email: </label><input type="text" name="email" id="email" class="orderTextInput"><br>
                     <label for="date">Date: </label><input type="date" name="date" id="date">
+                </div>
+                <div class="orderDiv">
+                    <h2>Special Instructions</h2><br>
+                    <textarea cols="50" rows="5"></textarea><br>
+                    <button type="reset">Reset</button> <button type="submit" onclick="tellOrder();">Submit</button>
                 </div>
             </div>
         </form>

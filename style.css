@@ -58,7 +58,7 @@ header a:visited {
 /* Under the Header Home Page */
 .mainFlex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 /* Footer */
@@ -73,6 +73,12 @@ footer {
     margin: 1%;
     border: dashed 3px black;
     padding: 35px;
+    flex-basis: auto;
+}
+
+.standardFlexBox div {
+    background-color: rgb(255, 235, 205);
+    flex-basis: auto;
 }
 
 /* OTHER */
@@ -83,7 +89,7 @@ body{
 .standardFieldset {
     margin: 2% 10% 0% 10%;
     padding: 1% 4% 1% 4%;
-    background-color: burlywood;
+    background-color: rgb(223, 183, 132);
     border: 3px solid black;
 }
 
@@ -111,7 +117,7 @@ label {
 }
 
 .orderTextInput {
-    width: 80%;
+    width: 70%;
 }
 
 hr {
