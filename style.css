@@ -132,6 +132,24 @@ margin-top: 10px;
 a {
     color: black;
 }
+.menuContentContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.breakfastMenuTitle {
+    text-align: left;
+
+}
+.burgerMenuTitle {
+    text-align: right;
+
+}
+.breakfastMenuTitleContainer {
+    width: 50%;
+}
+.burgerMenuTitleContainer {
+    width: 50%;
+}
 /* Footer */
 footer {
     background-color: rgb(84, 55, 36);
