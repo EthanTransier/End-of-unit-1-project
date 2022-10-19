@@ -18,7 +18,7 @@ header {
     height: auto;
     background-color: rgb(84, 55, 36);
     position: fixed;
-    gap: 60px;
+    gap: 55px;
 
     font-size: 30px;
     vertical-align: top;
@@ -70,7 +70,7 @@ footer {
 
 /* Order page only */
 .orderDiv {
-    margin: 20px;
+    margin: 1%;
     border: dashed 3px black;
     padding: 35px;
 }
@@ -81,7 +81,8 @@ body{
 }
 
 .standardFieldset {
-    margin: 30px;
+    margin: 2% 10% 0% 10%;
+    padding: 1% 4% 1% 4%;
     background-color: burlywood;
     border: 3px solid black;
 }
@@ -96,10 +97,28 @@ h1 {
     font-weight: 100;
 }
 
+h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
 label {
     font-size: 20px;
 }
 
 .delivery {
     width: 20px;
+}
+
+.orderTextInput {
+    width: 80%;
+}
+
+hr {
+    border: hidden;
+    border-top: black 3px solid;
+}
+
+.basicNumber {
+    width: 40px;
 }

@@ -59,29 +59,64 @@
             <input type="button" value="Search">
         </div>
     </header><br><br><br><br><br>
+
+    <!-- Order area -->
     <fieldset class="standardFieldset">
-        <h1>Order Now!</h1>
-        <div class="standardFlexBox">
-            <div class="orderDiv">
-                <h2>Delivery Type</h2><br>
-                <input type="radio" name="deliver" id="delivery"><label for="deliver">Delivery</label><br>
-                <input type="radio" name="deliver" id="pickup"><label for="pickup">Pick-Up</label><br>
-                <input type="radio" name="deliver" id="dinein"><label for="dinein">Dine-In</label>
+        <form>
+            <h1>Order Now!</h1><hr><br>
+            <!-- Specials -->
+            <div class="standardFlexBox" style="display: flex; justify-content: space-evenly;">
+                <div class="orderDiv" style="width:60%">
+                    <h2>Specials</h2><hr><br>
+                    <input type="number" name="bernardBaconSpecial" id="bernardBaconSpecial" class="basicNumber" placeholder="0"> <label for="bernardBaconSpecial">Bernard's Bacon Special $12.99</label><br>
+
+                    <input type="number" name="bernardSausageSpecial" id="bernardSausageSpecial" class="basicNumber" placeholder="0"> <label for="bernardSausageSpecial">Smoked Sausage Special $12.99</label><br><br><hr style="border-top:dotted 4px"><br>
+                    
+                    <input type="number" name="trippleBBQBurger" id="trippleBBQBurger" class="basicNumber" placeholder="0"> <label for="bernardBaconSpecial">Tripple BBQ BACON burger Special $13.99</label><br>
+                    <input type="number" name="trippleBBQBurger" id="trippleBBQBurger" class="basicNumber" placeholder="0"> <label for="bernardBaconSpecial">Tripple BBQ BACON burger Special $13.99</label>
+                    
+                </div>
             </div>
-            <div class="orderDiv">
-                <h2>Tip Amount</h2><br>
-                <input type="radio" name="tip" id="tip0"><label for="tip0">No tip</label><br>
-                <input type="radio" name="tip" id="tip10"><label for="tip10">10% tip</label><br>
-                <input type="radio" name="tip" id="tip20"><label for="tip20">20% tip</label>
+            <!-- Main Orders -->
+            <div class="standardFlexBox">
+                <div class="orderDiv">
+                    <h2>Order Breakfast</h2><hr>
+                    <input type="number" name="tripplePancake" id="tripplePancake" class="basicNumber" placeholder="0"> <label
+                    for="bernardBaconSpecial">Tripple Pancake Stack $9.99</label><br>
+                    <input type="number" name="frenchToast" id="frenchToast" class="basicNumber" placeholder="0"> <label
+                    for="frenchToast">French Toast Delight $10.99</label><br>
+                </div>
+                <div class="orderDiv">
+                    <h2>Order Burgers</h2><hr>
+                </div>
             </div>
-            <div class="orderDiv">
-                <h2>Order information</h2><br>
-                <label for="name">Name: </label><input type="text" name="name" id="name"><br>
-                <label for="email">Email: </label><input type="text" name="email" id="email"><br>
-                <label for="date">Date: </label><input type="date" name="date" id="date">
+            <hr>
+
+            <!-- Extra Options -->
+            <div class="standardFlexBox">
+                <div class="orderDiv">
+                    <h2>Delivery Type</h2><br>
+                    <input type="radio" name="deliver" id="delivery"><label for="deliver">Delivery</label><br>
+                    <input type="radio" name="deliver" id="pickup"><label for="pickup">Pick-Up</label><br>
+                    <input type="radio" name="deliver" id="dinein"><label for="dinein">Dine-In</label>
+                </div>
+                <div class="orderDiv">
+                    <h2>Tip Amount</h2><br>
+                    <input type="radio" name="tip" id="tip0"><label for="tip0">No tip</label><br>
+                    <input type="radio" name="tip" id="tip10"><label for="tip10">15% tip</label><br>
+                    <input type="radio" name="tip" id="tip20"><label for="tip20">30% tip</label>
+                </div>
+                <div class="orderDiv" style="width: 40%;">
+                    <h2>Order information</h2><br>
+                    <label for="name">Name: </label><input type="text" name="name" id="name" class="orderTextInput"><br>
+                    <label for="email">Email: </label><input type="text" name="email" id="email" class="orderTextInput"><br>
+                    <label for="date">Date: </label><input type="date" name="date" id="date">
+                </div>
             </div>
-        </div>
+        </form>
     </fieldset><br>
+
+    <!-- Footer -->
     <footer>
         <p><br>
             Contact us at (555)555-5555<br>
