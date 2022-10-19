@@ -150,10 +150,24 @@ a {
 .breakfastMenuTitleContainer {
     margin-top: 200px;
     width: 50%;
+    margin-right: 10px;
+}
+.pancakePicture {
+    width: 25%;
+}
+.frenchToastPicture {
+    width: 50%;
+}
+.burgerPicture {
+    width: 50%;
+}
+.doubleDeckerBurgerPicture {
+    width: 45%;
 }
 .burgerMenuTitleContainer {
     margin-top: 200px;
     width: 50%;
+    margin-left: 10px;
 }
 /* Footer */
 footer {
@@ -247,6 +261,11 @@ body::-webkit-scrollbar {
     }
     .burgerSpecialsContainer {
         margin-left: 400px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    video {
+        width: 100%;
     }
 }
 @media screen and (max-width: 1410px) {
