@@ -18,7 +18,7 @@ header {
     height: auto;
     background-color: rgb(84, 55, 36);
     position: fixed;
-    gap: 60px;
+    gap: 55px;
 
     font-size: 30px;
     vertical-align: top;
@@ -54,7 +54,7 @@ header a:visited {
     font-size: 15px;
 }
 
-.headerHomeButton, .headerMenuButton, .headerOrderButton, .headerJobButton {
+.headerHomeButton, .headerJobButton, .headerMenuButton, .headerOrderButton {
     position: relative;
     top: 20px;
 }
@@ -62,7 +62,7 @@ header a:visited {
 /* Under the Header Home Page */
 .mainFlex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .searchBarContainer {
 margin-top: 10px;
@@ -163,13 +163,73 @@ footer {
     width: 100%;
 }
 
+/* Order page only */
+.orderDiv {
+    margin: 1%;
+    border: dashed 3px black;
+    padding: 35px;
+    flex-basis: auto;
+}
+
+.standardFlexBox div {
+    background-color: rgb(255, 235, 205);
+    flex-basis: auto;
+}
+
 /* OTHER */
 body{
     background-color: bisque;
 }
+
+.standardFieldset {
+    margin: 2% 10% 0% 10%;
+    padding: 1% 4% 1% 4%;
+    background-color: rgb(223, 183, 132);
+    border: 3px solid black;
+    flex-wrap: wrap;
+}
+
+.standardFlexBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+label {
+    font-size: 20px;
+}
+
+.delivery {
+    width: 20px;
+}
+
+.orderTextInput {
+    width: 70%;
+}
+
+hr {
+    border: hidden;
+    border-top: black 3px solid;
+}
+
+.basicNumber {
+    width: 40px;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
+
+/* All media queries */
 @media screen and (max-width: 1799px) {
     .breakfastSpecialsContainer {
         margin-right: 500px;
@@ -209,6 +269,9 @@ body::-webkit-scrollbar {
     }
     .burgerSpecialsContainer {
         margin-left: 200px;
+    }
+    .standardFlexBox {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 1210px) {
