@@ -133,9 +133,11 @@ margin-top: 10px;
 a {
     color: black;
 }
+/* Menu Page Specific CSS */
 .menuContentContainer {
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
 }
 .breakfastMenuTitle {
     text-align: left;
@@ -146,9 +148,11 @@ a {
 
 }
 .breakfastMenuTitleContainer {
+    margin-top: 200px;
     width: 50%;
 }
 .burgerMenuTitleContainer {
+    margin-top: 200px;
     width: 50%;
 }
 /* Footer */
