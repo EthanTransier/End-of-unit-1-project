@@ -91,6 +91,7 @@ body{
     padding: 1% 4% 1% 4%;
     background-color: rgb(223, 183, 132);
     border: 3px solid black;
+    flex-wrap: wrap;
 }
 
 .standardFlexBox {
@@ -127,4 +128,161 @@ hr {
 
 .basicNumber {
     width: 40px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* All media queries */
+@media screen and (max-width: 1799px) {
+    .breakfastSpecialsContainer {
+        margin-right: 500px;
+    }
+    .burgerSpecialsContainer {
+        margin-left: 500px;
+    }
+}
+@media screen and (max-width: 1510px){
+    header {
+        gap: 50px;
+    }
+    .breakfastSpecialsContainer {
+        margin-right: 400px;
+    }
+    .burgerSpecialsContainer {
+        margin-left: 400px;
+    }
+}
+@media screen and (max-width: 1410px) {
+    header {
+        gap: 40px;
+    }
+    .breakfastSpecialsContainer {
+        margin-right: 300px;
+    }
+    .burgerSpecialsContainer {
+        margin-left: 300px;
+    }
+}
+@media screen and (max-width: 1310px) {
+    header {
+        gap: 30px;
+    }
+    .breakfastSpecialsContainer {
+        margin-right: 200px;
+    }
+    .burgerSpecialsContainer {
+        margin-left: 200px;
+    }
+    .standardFlexBox {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1210px) {
+    header {
+        gap: 20px;
+    }
+    .breakfastSpecialsContainer {
+        margin-right: 100px;
+    }
+    .burgerSpecialsContainer {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    header {
+        gap: 10px;
+        font-size: 25px;
+    }
+    .headerCornerLogoImage {
+        width: 75px;
+    }
+    .breakfastSpecialsContainer {
+        margin-right: 0px;
+    }
+    .burgerSpecialsContainer {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 960px) {
+    header {
+        font-size: 20px;
+    }
+    .headerCornerLogoImage {
+        width: 60px;
+    }
+}
+@media screen and (max-width: 799px) {
+    .breakfastSpecialsContainer {
+        width: 250px;
+        height: 194.38px;
+        padding-right: 250px;
+    }
+    .breakfastSpecialsImage {
+        width: 250px;
+        left: 250px;
+    }
+    .breakfastText {
+        margin-top: -195px;
+        font-size: 15px;
+    }
+    .breakfastContainerTitle {
+        font-size: 20px;
+    }
+    .burgerSpecialsContainer {
+        width: 250px;
+        height: 194.38px;
+        padding-right: 250px;
+    }
+    .burgerSpecialsImage {
+        width: 250px;
+        left: 250px;
+    }
+    .burgerText {
+        margin-top: -195px;
+        font-size: 15px;
+    }
+    .burgerContainerTitle {
+        font-size: 20px;
+    }
+    .headerHomeButton, .headerMenuButton, .headerOrderButton, .headerJobButton {
+    top: 15px;
+}
+}
+@media screen and (max-width: 773px) {
+    #searchInput {
+        width: 75px;
+    }
+}
+@media screen and (max-width: 718px) {
+    #searchInput {
+        width: 50px;
+    }
+    #searchButton {
+        width: 35px;
+    }
+}
+@media screen and (max-width: 677px) {
+    header {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 15px;
+    }
+    .headerCornerLogoImage {
+        width: 45px;
+    }
+}
+@media screen and (max-width: 558px) {
+    header {
+        font-size: 12px;
+    }
+
+    .headerCornerLogoImage {
+        width: 30px;
+    }
+    .headerHomeButton, .headerMenuButton, .headerOrderButton, .headerJobButton {
+    top: 10px;
+    }
 }
